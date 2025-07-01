@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>My Bookshelf</h1>
+
+    <div class="sort-container">
+        <label for="sort-select">SortBy:</label>
+        <select id="sort-select">
+            <option value="" disabledselect>Select sort Option</option></option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+        </select>
+
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by title or author..." />
+    </div>
+    <form id="bookform">
+        <input type="text" id="title" placeholder="booktitle" required/>
+        <input type="text" id="author" placeholder="authorname" required/>
+        <input type="url" id = "cover" placeholder="Cover Image URL"/>
+        
+        <label>
+            <input type="checkbox" id = "read"/>
+            Read
+        </label>
+        <button type="submit">Add Book</button>
+    </form>
+    
+    
+    <div id="booklist"></div>
+    <script src="script.js"></script>
+</body>
+</html>
